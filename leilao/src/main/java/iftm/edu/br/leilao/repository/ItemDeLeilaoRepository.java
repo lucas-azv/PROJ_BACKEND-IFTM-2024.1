@@ -1,8 +1,11 @@
 package iftm.edu.br.leilao.repository;
 
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+import iftm.edu.br.leilao.model.ItemDeLeilao;
+
 @Repository
-public class ItemDeLeilaoRepository {
-    
+public interface ItemDeLeilaoRepository extends CrudRepository<ItemDeLeilao, Long> {
+	
 }
